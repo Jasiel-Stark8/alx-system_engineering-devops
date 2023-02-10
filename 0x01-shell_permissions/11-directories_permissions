@@ -1,2 +1,2 @@
 #!/bin/bash
-for dir in $(find . -type d) chmod 755 "$dir"
+find . -type d -exec chmod 755 {} +
