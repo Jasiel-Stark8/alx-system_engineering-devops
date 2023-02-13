@@ -1,1 +1,2 @@
 #!/bin/bash
+find . -type f | sort -t " " -k 3 -r input_file | head -n 10
