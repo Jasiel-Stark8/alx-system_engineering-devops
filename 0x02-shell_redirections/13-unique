@@ -1,1 +1,2 @@
 #!/bin/bash
+read list | dort $list | uniq
