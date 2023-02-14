@@ -1,2 +1,4 @@
 #!/bin/bash
-IFS=:;echo "${PATH[*]}"|xargs -d: -n1 test -d|grep -c "^1$"
+find $PATH -type d | wc -l
+echo $PATH | tr ':' '\n' | wc -l
+
