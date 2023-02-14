@@ -1,1 +1,2 @@
 #!/bin/bash
+find /action -type d | wc -l
