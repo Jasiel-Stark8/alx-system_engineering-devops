@@ -1,1 +1,2 @@
 #!/bin/bash
+TRUEKNOWLEDGE=num | echo $(($num + 128)) | LC_ALL=C | printf "\n"
