@@ -1,2 +1,2 @@
 #!/bin/bash
-TRUEKNOWLEDGE=num | echo $(($num + 128)) | printf "\n"
+echo $((128 + $TRUEKNOWLEDGE))
