@@ -1,2 +1,2 @@
-find . -type f -name "*.gif" -print0 | \
-xargs -0 stat -c "%n" | cut -d "." -f1 | tr '[:upper:]' '[:lower:]' | sort -f
+find . -type f -name \*.gif -printf "%f\n" | LC_ALL-C sort -f | rev | cut -b 5- |rev
+
