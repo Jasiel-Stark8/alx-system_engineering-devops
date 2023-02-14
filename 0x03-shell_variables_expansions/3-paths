@@ -1,2 +1,2 @@
 #!/bin/bash
-find /action -type d | wc -l
+IFS=:;echo "${PATH[*]}"|xargs -d: -n1 test -d|grep -c "^1$"
